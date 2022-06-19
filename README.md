@@ -8,7 +8,7 @@ MSc CCI Modular
 
 
 
-I. This project takes the sentiment analysis task in natural language processing as the starting point to classify the sentiment polarity of the existing movie review dataset imdb. In terms of model selection, in order to extract richer textual information, the project uses the pre-trained language model bert as backbone, and adds a fully-connected layer as classifier in the top layer for binary classification, and computes the output results with labels for cross-entropy loss.
+1. This project takes the sentiment analysis task in natural language processing as the starting point to classify the sentiment polarity of the existing movie review dataset imdb. In terms of model selection, in order to extract richer textual information, the project uses the pre-trained language model bert as backbone, and adds a fully-connected layer as classifier in the top layer for binary classification, and computes the output results with labels for cross-entropy loss.
 
 
 2. In terms of data processing, this project filters the punctuation marks of the samples and removes <br />tags. To take advantage of the pre-trained model, this project uses bert-base-cased weights for initialization; in the process of forward propagation, the top-level output corresponding to the [CLS] tag of the sample is selected as the sample feature and fed into the classifier. In the validation phase, this project selects f1 as the evaluation metric, and saves the model under the folderoutput when the metric improves from the previous evaluation result.
