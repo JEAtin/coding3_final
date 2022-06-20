@@ -8,7 +8,7 @@ MSc CCI Modular
 
 
 
-About my final project.
+
 1. This project takes the sentiment analysis task in natural language processing as the starting point to classify the sentiment polarity of the existing movie review dataset imdb. In terms of model selection, in order to extract richer textual information, the project uses the pre-trained language model bert as backbone, and adds a fully-connected layer as classifier in the top layer for binary classification, and computes the output results with labels for cross-entropy loss.
 
 
